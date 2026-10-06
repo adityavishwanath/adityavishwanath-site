@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found | Aditya Vishwanath</title>
+<meta name="description" content="Page not found.">
+<meta name="author" content="Aditya Vishwanath">
+<meta name="robots" content="noindex, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Press and Talks | Aditya Vishwanath">
+<meta property="og:site_name" content="Aditya Vishwanath">
+<meta property="og:locale" content="en_US">
+<meta property="og:description" content="Independent press coverage, podcasts and features on Aditya Vishwanath, Inspirit and MakerGhat.">
+<meta property="og:image" content="https://www.adityavishwanath.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Aditya Vishwanath">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Press and Talks | Aditya Vishwanath">
+<meta name="twitter:description" content="Independent press coverage, podcasts and features on Aditya Vishwanath, Inspirit and MakerGhat.">
+<meta name="twitter:image" content="https://www.adityavishwanath.com/og.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#F3F2EE">
+<!-- Apply a saved lights-off choice before the page paints, so it never flashes. -->
+<script>
+  try { if (localStorage.getItem('lights') === 'off') document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+</script>
+<link rel="preload" href="/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face {
+    font-family: 'Schibsted Grotesk';
+    src: url('/schibsted-grotesk.woff2') format('woff2');
+    font-weight: 400 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --paper: #F3F2EE;
+    --ink: #141413;
+    --muted: #5E5D58;
+    --rule: #D6D4CD;
+    --accent: #C4321A;
+    --glow: rgba(255, 190, 110, 0);
+    --x: 50%;
+    --y: 30%;
+  }
+  :root[data-theme="dark"] {
+    --paper: #0F0F0E;
+    --ink: #ECE9E2;
+    --muted: #A6A299;
+    --rule: #2C2B28;
+    --accent: #F0A04B;
+    --glow: rgba(255, 190, 110, 0.09);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+    background-color: var(--paper);
+    background-image: radial-gradient(600px circle at var(--x) var(--y), var(--glow), transparent 70%);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: 'Schibsted Grotesk', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    transition: background-color .6s ease, color .6s ease;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+    transition: text-decoration-thickness .15s ease, text-decoration-color .6s ease;
+  }
+  a:hover { text-decoration-thickness: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 20px 40px 72px; }
+
+  /* Top bar */
+  .top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px 32px; }
+  .top nav { display: flex; gap: 22px; font-size: 16px; padding-top: 12px; }
+
+  .switch {
+    display: flex; align-items: flex-start; gap: 10px;
+    min-height: 44px; padding: 0 2px; border: 0; background: transparent;
+    color: var(--ink); font: inherit; font-size: 16px; cursor: pointer;
+  }
+  .switch span { padding-top: 12px; }
+  .switch svg { overflow: visible; }
+  .switch .chain { transition: transform .16s ease; }
+  .switch.tug .chain { transform: translateY(7px); }
+  .switch circle { fill: var(--accent); transition: fill .6s ease; }
+
+  /* Name */
+  .intro { padding: 88px 0 72px; }
+  h1 {
+    margin: 0;
+    font-size: clamp(56px, 8.4vw, 116px);
+    font-weight: 600;
+    letter-spacing: -0.045em;
+    line-height: 0.92;
+  }
+  .role { margin-top: 20px; font-size: clamp(20px, 2vw, 24px); color: var(--muted); }
+
+  /* Sections */
+  .row {
+    display: flex; flex-wrap: wrap; gap: 8px 48px;
+    border-top: 1px solid var(--rule);
+    padding: 24px 0 40px;
+    transition: opacity .5s ease, border-color .6s ease;
+  }
+  .row.lead { border-top: 1.5px solid var(--ink); padding: 28px 0 48px; gap: 24px 48px; }
+  .row h2 {
+    flex: 1 1 220px; max-width: 280px; margin: 0; padding-top: 4px;
+    font-size: 16px; font-weight: 600; color: var(--accent);
+    transition: color .6s ease;
+  }
+  .row p { flex: 999 1 560px; min-width: 0; max-width: 720px; margin: 0; }
+  .row.lead .photo { flex: 1 1 220px; max-width: 280px; }
+  .row.lead img { display: block; width: 100%; max-width: 260px; aspect-ratio: 4 / 5; object-fit: cover; height: auto; }
+  .row.lead p { max-width: 760px; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.32; letter-spacing: -0.012em; }
+
+  /* The lamp: hover a section and the rest dim */
+  @media (hover: hover) {
+    .bio:hover .row { opacity: .28; }
+    .bio .row:hover { opacity: 1; }
+  }
+
+  .row ul { flex: 999 1 560px; min-width: 0; max-width: 720px; margin: 0; padding: 0; list-style: none; }
+  .row li { margin: 0 0 12px; }
+  .row .sub { color: var(--muted); font-size: 16px; }
+  footer { padding-top: 20px; border-top: 1.5px solid var(--ink); font-size: 15px; color: var(--muted); }
+
+  /* One quiet entrance on load */
+  .fade { animation: fade .9s cubic-bezier(.2,.7,.2,1) both; }
+  .fade.later { animation-delay: .15s; }
+  @keyframes fade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 16px 22px 56px; }
+    .intro { padding: 56px 0 48px; }
+    body { font-size: 18px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top fade">
+    <nav aria-label="Site">
+      <a href="/">Home</a>
+      <a href="/press/">Press</a>
+      <a href="/cv/">CV</a>
+    </nav>
+    <button class="switch" type="button" aria-pressed="false" id="lights">
+      <span>Lights off</span>
+      <svg width="12" height="44" viewBox="0 0 12 44" aria-hidden="true">
+        <g class="chain">
+          <line x1="6" y1="0" x2="6" y2="31" stroke="currentColor" stroke-width="1.2" stroke-dasharray="1.5 2.2"/>
+          <circle cx="6" cy="36" r="4.4"/>
+        </g>
+      </svg>
+    </button>
+  </header>
+  <div class="intro fade">
+    <h1>Page not<br>found</h1>
+    <div class="role">Independent coverage, podcasts and features</div>
+  </div>
+  <main class="bio"><section class="row"><h2>404</h2><p>That page does not exist. <a href="/">Back to the home page</a>.</p></section></main>
+  <footer>Updated October 2026</footer>
+</div>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('lights');
+    var label = btn.querySelector('span');
+    var meta = document.querySelector('meta[name="theme-color"]');
+
+    function render() {
+      var dark = root.dataset.theme === 'dark';
+      label.textContent = dark ? 'Lights on' : 'Lights off';
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      meta.setAttribute('content', dark ? '#0F0F0E' : '#F3F2EE');
+    }
+
+    btn.addEventListener('click', function () {
+      var dark = root.dataset.theme !== 'dark';
+      if (dark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+      try { localStorage.setItem('lights', dark ? 'off' : 'on'); } catch (e) {}
+      btn.classList.add('tug');
+      setTimeout(function () { btn.classList.remove('tug'); }, 170);
+      render();
+    });
+
+    // Lamp glow follows the cursor (only visible with the lights off).
+    var pending = false, mx = 0, my = 0;
+    window.addEventListener('pointermove', function (e) {
+      mx = e.clientX; my = e.clientY;
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(function () {
+        root.style.setProperty('--x', mx + 'px');
+        root.style.setProperty('--y', my + 'px');
+        pending = false;
+      });
+    }, { passive: true });
+
+    render();
+  })();
+</script>
+</body>
+</html>
+
