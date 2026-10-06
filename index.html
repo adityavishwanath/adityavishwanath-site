@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aditya Vishwanath</title>
+<meta name="description" content="Aditya Vishwanath is an education researcher and entrepreneur. VP at Macmillan Learning's Innovation Labs, Visiting Research Scholar at Stanford GSE, and co-founder of MakerGhat and Inspirit.">
+<link rel="canonical" href="https://adityavishwanath.com/">
+
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://adityavishwanath.com/">
+<meta property="og:title" content="Aditya Vishwanath">
+<meta property="og:description" content="Education researcher and entrepreneur.">
+<meta property="og:image" content="https://adityavishwanath.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aditya Vishwanath">
+<meta name="twitter:description" content="Education researcher and entrepreneur.">
+<meta name="twitter:image" content="https://adityavishwanath.com/og.jpg">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#F3F2EE">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aditya Vishwanath",
+  "url": "https://adityavishwanath.com/",
+  "image": "https://adityavishwanath.com/adi.jpg",
+  "jobTitle": "Vice President, Innovation Labs",
+  "worksFor": { "@type": "Organization", "name": "Macmillan Learning" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Stanford University" },
+    { "@type": "CollegeOrUniversity", "name": "Georgia Institute of Technology" }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/adityavishwanath",
+    "https://scholar.google.com/citations?user=mHhgE7AAAAAJ"
+  ]
+}
+</script>
+
+<!-- Apply a saved lights-off choice before the page paints, so it never flashes. -->
+<script>
+  try { if (localStorage.getItem('lights') === 'off') document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+</script>
+
+<link rel="preload" href="schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+  @font-face {
+    font-family: 'Schibsted Grotesk';
+    src: url('schibsted-grotesk.woff2') format('woff2');
+    font-weight: 400 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  :root {
+    --paper: #F3F2EE;
+    --ink: #141413;
+    --muted: #5E5D58;
+    --rule: #D6D4CD;
+    --accent: #C4321A;
+    --glow: rgba(255, 190, 110, 0);
+    --x: 50%;
+    --y: 30%;
+  }
+  :root[data-theme="dark"] {
+    --paper: #0F0F0E;
+    --ink: #ECE9E2;
+    --muted: #A6A299;
+    --rule: #2C2B28;
+    --accent: #F0A04B;
+    --glow: rgba(255, 190, 110, 0.09);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+    background-color: var(--paper);
+    background-image: radial-gradient(600px circle at var(--x) var(--y), var(--glow), transparent 70%);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: 'Schibsted Grotesk', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    transition: background-color .6s ease, color .6s ease;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+    transition: text-decoration-thickness .15s ease, text-decoration-color .6s ease;
+  }
+  a:hover { text-decoration-thickness: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 20px 40px 72px; }
+
+  /* Top bar */
+  .top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 12px 32px; }
+  .top nav { display: flex; gap: 22px; font-size: 16px; padding-top: 12px; }
+
+  .switch {
+    display: flex; align-items: flex-start; gap: 10px;
+    min-height: 44px; padding: 0 2px; border: 0; background: transparent;
+    color: var(--ink); font: inherit; font-size: 16px; cursor: pointer;
+  }
+  .switch span { padding-top: 12px; }
+  .switch svg { overflow: visible; }
+  .switch .chain { transition: transform .16s ease; }
+  .switch.tug .chain { transform: translateY(7px); }
+  .switch circle { fill: var(--accent); transition: fill .6s ease; }
+
+  /* Name */
+  .intro { padding: 88px 0 72px; }
+  h1 {
+    margin: 0;
+    font-size: clamp(56px, 8.4vw, 116px);
+    font-weight: 600;
+    letter-spacing: -0.045em;
+    line-height: 0.92;
+  }
+  .role { margin-top: 20px; font-size: clamp(20px, 2vw, 24px); color: var(--muted); }
+
+  /* Sections */
+  .row {
+    display: flex; flex-wrap: wrap; gap: 8px 48px;
+    border-top: 1px solid var(--rule);
+    padding: 24px 0 40px;
+    transition: opacity .5s ease, border-color .6s ease;
+  }
+  .row.lead { border-top: 1.5px solid var(--ink); padding: 28px 0 48px; gap: 24px 48px; }
+  .row h2 {
+    flex: 1 1 220px; max-width: 280px; margin: 0; padding-top: 4px;
+    font-size: 16px; font-weight: 600; color: var(--accent);
+    transition: color .6s ease;
+  }
+  .row p { flex: 999 1 560px; min-width: 0; max-width: 720px; margin: 0; }
+  .row.lead .photo { flex: 1 1 220px; max-width: 280px; }
+  .row.lead img { display: block; width: 100%; max-width: 260px; aspect-ratio: 4 / 5; object-fit: cover; height: auto; }
+  .row.lead p { max-width: 760px; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.32; letter-spacing: -0.012em; }
+
+  /* The lamp: hover a section and the rest dim */
+  @media (hover: hover) {
+    .bio:hover .row { opacity: .28; }
+    .bio .row:hover { opacity: 1; }
+  }
+
+  footer { padding-top: 20px; border-top: 1.5px solid var(--ink); font-size: 15px; color: var(--muted); }
+
+  /* One quiet entrance on load */
+  .fade { animation: fade .9s cubic-bezier(.2,.7,.2,1) both; }
+  .fade.later { animation-delay: .15s; }
+  @keyframes fade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 16px 22px 56px; }
+    .intro { padding: 56px 0 48px; }
+    body { font-size: 18px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top fade">
+    <nav aria-label="Elsewhere">
+      <a href="mailto:adityav2004@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/adityavishwanath">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=mHhgE7AAAAAJ&amp;hl=en">Scholar</a>
+    </nav>
+    <button class="switch" type="button" aria-pressed="false" id="lights">
+      <span>Lights off</span>
+      <svg width="12" height="44" viewBox="0 0 12 44" aria-hidden="true">
+        <g class="chain">
+          <line x1="6" y1="0" x2="6" y2="31" stroke="currentColor" stroke-width="1.2" stroke-dasharray="1.5 2.2"/>
+          <circle cx="6" cy="36" r="4.4"/>
+        </g>
+      </svg>
+    </button>
+  </header>
+
+  <div class="intro fade">
+    <h1>Aditya<br>Vishwanath</h1>
+    <div class="role">Education researcher and entrepreneur</div>
+  </div>
+
+  <!-- ===================== BIO: edit text below ===================== -->
+  <main class="bio fade later">
+
+    <section class="row lead">
+      <div class="photo"><img src="adi.jpg" width="640" height="800" alt="Aditya Vishwanath"></div>
+      <p>My work focuses on building AI-powered tools that make learning more engaging, accessible and meaningful, especially in public schools, vocational programs and underserved communities.</p>
+    </section>
+
+    <section class="row">
+      <h2>USA</h2>
+      <p>I'm Vice President at <a href="https://www.macmillanlearning.com/college/us">Macmillan Learning</a>'s Innovation Labs group, where I lead work on AI, XR and emerging technology in K-12 and higher education. I'm also a Visiting Research Scholar at Stanford's Graduate School of Education, studying how AI and XR shape learning and youth agency.</p>
+    </section>
+
+    <section class="row">
+      <h2>India</h2>
+      <p>I co-founded <a href="https://www.makerghat.org/">MakerGhat</a>, one of India's largest makerspace networks, and serve on its board. Since launching in Mumbai in December 2018, it has reached over 2 million young people across 10,000+ schools in six states.</p>
+    </section>
+
+    <section class="row">
+      <h2>Before</h2>
+      <p>I co-founded <a href="https://www.inspiritvr.com/">Inspirit</a> and led it as CEO. We built immersive, AI-enabled VR tools for K-12 and vocational classrooms, raised over $9 million from investors including the founders of Yahoo and Oculus, and partnered with Meta, Snap and the NFL. At our peak in late 2025, Inspirit ran one of the largest XR programs in US K-12 education. The platform was acquired by Avantis Education (ClassVR) in February 2026.</p>
+    </section>
+
+    <section class="row">
+      <h2>Alongside</h2>
+      <p>I sit on the board of <a href="https://mantra4change.org/">Mantra4Change</a> USA and advise a few organizations working on AI and education. At <a href="https://www.theconvergencefoundation.org/">The Convergence Foundation</a>, it's AI policy and ecosystem building in South Asia. At <a href="https://shikhaacademy.org/">Shikha Labs</a>, AI tools for teachers and students across India. With the Brookings Institution, AI and the redesign of California's high schools. With Dalberg, responsible AI adoption in Indian schools and universities. And at the <a href="https://www.exploratorium.edu/">Exploratorium</a>, I'm on the advisory board of the Glassroom Initiative, thinking about how informal learning spaces can meet the AI moment for students in California.</p>
+    </section>
+
+    <section class="row">
+      <h2>Service</h2>
+      <p>I review for NSF panels (RITEL, RETTL) and ACM venues including CHI, DIS and CSCW, and mentor at Stanford GSE's Education Entrepreneurship Hub.</p>
+    </section>
+
+    <section class="row">
+      <h2>Education</h2>
+      <p>I earned my PhD in Learning Sciences from Stanford as a Knight-Hennessy Scholar, and my BS in Computer Science from Georgia Tech.</p>
+    </section>
+
+    <section class="row">
+      <h2>Along the way</h2>
+      <p>My work has been featured in <a href="https://www.nature.com/articles/s44184-023-00047-6">Nature</a>, <a href="https://freakonomics.com/podcast/can-a-i-companions-replace-human-connection/">Freakonomics</a> and <a href="https://indianexpress.com/profile/guest-writer/aditya-vishwanath/">The Indian Express</a>, and recognized by Forbes 30 Under 30, the <a href="https://www.ashoka.org/en/fellow/aditya-vishwanath">Ashoka Fellowship</a>, <a href="https://internationalstrategyforum.io/fellow/aditya-vishwanath/">Schmidt Futures</a>, MIT Solve, SXSW EDU, Georgia Tech's 40 Under 40 and the <a href="https://www.exploratorium.edu/people/aditya-vishwanath">Exploratorium Osher Fellowship</a>.</p>
+    </section>
+
+    <section class="row">
+      <h2>Off hours</h2>
+      <p>You'll usually find me on a trail somewhere, playing a Carnatic keerthanam on my violin, or in my kitchen making sambar for weekend brunch.</p>
+    </section>
+
+  </main>
+  <!-- ===================== end of BIO ===================== -->
+
+  <footer>Updated October 2026</footer>
+
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('lights');
+    var label = btn.querySelector('span');
+    var meta = document.querySelector('meta[name="theme-color"]');
+
+    function render() {
+      var dark = root.dataset.theme === 'dark';
+      label.textContent = dark ? 'Lights on' : 'Lights off';
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      meta.setAttribute('content', dark ? '#0F0F0E' : '#F3F2EE');
+    }
+
+    btn.addEventListener('click', function () {
+      var dark = root.dataset.theme !== 'dark';
+      if (dark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+      try { localStorage.setItem('lights', dark ? 'off' : 'on'); } catch (e) {}
+      btn.classList.add('tug');
+      setTimeout(function () { btn.classList.remove('tug'); }, 170);
+      render();
+    });
+
+    // Lamp glow follows the cursor (only visible with the lights off).
+    var pending = false, mx = 0, my = 0;
+    window.addEventListener('pointermove', function (e) {
+      mx = e.clientX; my = e.clientY;
+      if (pending) return;
+      pending = true;
+      requestAnimationFrame(function () {
+        root.style.setProperty('--x', mx + 'px');
+        root.style.setProperty('--y', my + 'px');
+        pending = false;
+      });
+    }, { passive: true });
+
+    render();
+  })();
+</script>
+</body>
+</html>
